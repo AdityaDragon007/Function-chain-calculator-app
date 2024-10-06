@@ -5,11 +5,12 @@ import {
   FUNCTION_4,
   FUNCTION_5,
 } from "./components/FunctionCard/FunctionCardConstants";
+import { STROKE_OFFSET } from "./DynamicFunctionCalculatorConstants";
 export function getPointPos(point) {
   const pos = point.getBoundingClientRect();
   return {
     left: pos.left + point.clientWidth / 2 + window.scrollX, // Move to the center horizontally
-    top: pos.top - point.clientHeight / 2 - 12 + window.scrollY, // Move to the center vertically
+    top: pos.top - point.clientHeight / 2 + STROKE_OFFSET + window.scrollY, // Move to the center vertically
   };
 }
 

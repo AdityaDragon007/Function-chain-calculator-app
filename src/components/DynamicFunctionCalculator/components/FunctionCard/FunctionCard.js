@@ -13,7 +13,17 @@ function FunctionCard({
 
   return (
     <div className={"card"} id={name}>
-      <div>{name}</div>
+      <div className="labelContainer">
+        <div class="icon-container">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        {name}
+      </div>
       <div className={"inputsContainer"}>
         <div className="equation">
           <div>Equation</div>

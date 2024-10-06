@@ -58,7 +58,6 @@ function DynamicCalculator() {
 
   return (
     <div>
-      Dynamic Calc
       <div>
         <svg>
           <path id="c1"></path>
