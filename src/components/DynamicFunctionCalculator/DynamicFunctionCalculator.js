@@ -53,7 +53,6 @@ function DynamicCalculator() {
   }, []);
 
   useEffect(() => {
-    console.log({ functionInputs });
     calculateOutput(); // Calculate output when function inputs change
   }, [functionInputs, inputValue]); // Depend on inputValue as well
 

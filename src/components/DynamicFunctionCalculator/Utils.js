@@ -24,14 +24,12 @@ export function createCurvedLine(source, target, drawBelow = false) {
   const dy = target[1] - source[1];
   const dr = Math.sqrt(dx * dx + dy * dy) / 1.5;
 
-  // The flags in the 'A' command: large-arc-flag and sweep-flag
-  // sweep-flag = 0 means drawing curve in the counterclockwise direction (above)
-  // sweep-flag = 1 means drawing curve in the clockwise direction (below)
   const sweepFlag = drawBelow ? 1 : 0;
 
   return `M${source[0]},${source[1]}A${dr},${dr} 0 0,${sweepFlag} ${target[0]},${target[1]}`;
 }
 
+//Function to create wavy line
 export function createSinWave(source, target, amplitude = 50, frequency = 1) {
   const [x1, y1] = source;
   const [x2, y2] = target;
@@ -151,6 +149,6 @@ export const calculateEquation = (equation, xValue) => {
     }
   } catch (error) {
     console.error("Error evaluating equation:", error);
-    return null; // or handle the error as needed
+    return null;
   }
 };
