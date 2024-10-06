@@ -1,0 +1,24 @@
+.functionSection {
+  display: flex;
+  flex-direction: column;
+  gap: 107px;
+  padding: 107px;
+}
+.upperFunctionsSection {
+  display: flex;
+  gap: 140px;
+  justify-content: space-evenly;
+}
+
+.lowerFunctionsSection {
+  display: flex;
+  gap: 140px;
+  justify-content: center;
+}
+
+.firstConnection {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 360px;
+}

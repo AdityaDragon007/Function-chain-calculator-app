@@ -1,0 +1,57 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.equation,
+.nextFunction {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.equationText {
+  width: 187px;
+  height: 27px;
+}
+
+.selectInput {
+  width: 195px;
+  height: 33px;
+}
+
+/* Outer Circle */
+.outer-circle {
+  width: 12px; /* Set the size of the outer circle */
+  height: 12px;
+  background-color: lightblue; /* Color of the outer circle */
+  border-radius: 50%; /* Creates the round shape */
+  position: relative; /* Needed for the inner circle to position itself */
+  display: flex; /* To center the inner circle */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner Circle */
+.inner-circle {
+  width: 8px; /* Set the size of the inner circle */
+  height: 8px;
+  background-color: blue; /* Color of the inner circle */
+  border-radius: 50%; /* Creates the round shape */
+}
+
+.connectionsContainer {
+  display: flex;
+  justify-content: space-between;
+}
